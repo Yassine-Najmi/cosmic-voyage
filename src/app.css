@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap");
+
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --dark-blue: #002147;
+  --midnight-blue: #221e2c;
+  --deep-purple: #6a0dad;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --exo: "Exo 2", sans-serif;
+  --orbi: "Orbitron", sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--exo);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+
+  /* set length of scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 150rem;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.saturn-img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.75;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--orbi);
+}
+
+h1,
+h2 {
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+/* intro styles */
+/*  #intro   */
+.header-container {
+  padding-bottom: 10rem;
+  height: 100vh;
+}
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header h1 span {
+  /* color: var(--aqua); */
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--aqua);
+}
+
+.header p,
+.join-container p {
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
+}
+
+.header-btn,
+.join-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--aqua);
+  text-decoration: none;
+  color: var(--white);
+  background-color: transparent;
+}
+
+.header-btn:hover,
+.join-btn:hover {
+  background-color: var(--aqua);
+  color: var(--black);
+  opacity: 0.6;
+  border: 1px solid var(--black);
+  transition: 0.3s ease;
+}
+.join-section {
+  position: relative;
+  padding-bottom: 10rem;
+  height: 100vh;
+  background-image: url("./assets/images/2k_stars_milky_way.jpg");
+}
+.join-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.astronaut-right-hand-img {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 60vh;
+  width: 40vw;
+  /* object-fit: cover; */
+  opacity: 0.75;
+}
