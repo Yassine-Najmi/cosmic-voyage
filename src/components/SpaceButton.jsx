@@ -1,8 +1,8 @@
 import "./SpaceButton.css";
-export default function SpaceButton({ children }) {
+export default function SpaceButton({ children, email }) {
   return (
     <div className="box">
-      <a href="_blank" type="button" className="button">
+      <a href={`mailto:${email}`} type="button" className="button">
         {children}
       </a>
       <div className="space">

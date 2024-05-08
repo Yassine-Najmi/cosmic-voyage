@@ -1,7 +1,7 @@
 import SpaceButton from "./SpaceButton.jsx";
 export default function Join() {
   return (
-    <section className="join-section">
+    <section id="contact" className="join-section">
       <img
         className="astronaut-right-hand-img"
         src="src/assets/images/astronaut-right-hand.png"
@@ -15,7 +15,9 @@ export default function Join() {
           love for all things cosmic, I'm here to chat.
         </p>
 
-        <SpaceButton> Get in Touch</SpaceButton>
+        <SpaceButton email={"yassine.najmi01@gmail.com"}>
+          Get in Touch
+        </SpaceButton>
         {/* <a href="_blank" type="button" className="join-btn">
           Get in Touch
         </a> */}
