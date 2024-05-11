@@ -61,7 +61,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-family: var(--orbi);
 }
@@ -242,3 +243,82 @@ h2 {
 }
 
 /* Footer */
+.footer-container {
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  padding: 4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+.footer-content {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.footer-content h4 {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-left: 2rem;
+}
+.footer-info {
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+.footer-links {
+  list-style: none;
+}
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:active {
+  color: var(--aqua);
+}
+.footer-social ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding-left: 2rem;
+  margin-top: 4rem;
+}
+.footer-social ul li {
+  margin-bottom: 32px;
+}
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.footer-social a:hover {
+  color: var(--aqua);
+}
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white; /* Adjust text color as needed */
+  padding: 10px 0; /* Add padding for spacing */
+  text-align: center;
+}
