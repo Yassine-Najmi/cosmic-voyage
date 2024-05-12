@@ -73,6 +73,19 @@ h2 {
   letter-spacing: 0.3rem;
   font-size: 2.5rem;
 }
+
+/* Gradient background  */
+.gradient {
+  height: 0.2rem;
+  background: linear-gradient(
+    280deg,
+    rgba(23, 19, 33, 1) 0%,
+    rgba(0, 33, 71, 1) 30%,
+    rgba(134, 251, 251, 1) 100%
+  );
+
+  z-index: -100;
+}
 /* intro styles */
 /*  #intro   */
 .header-container {
@@ -138,7 +151,7 @@ h2 {
   top: 10%;
   left: 90%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 10;
   height: 60vh;
   width: 40vw;
   /* object-fit: cover; */
